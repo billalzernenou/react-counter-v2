@@ -1,9 +1,17 @@
 import "./App.css";
+import Counter from "./Counter";
+import Header from "./Header";
+import Footer from "./Footer";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { faPlus, faMinus } from "@fortawesome/free-solid-svg-icons";
+library.add(faPlus, faMinus);
 
 function App() {
   return (
-    <div>
-      Hello from <a href="https://www.lereacteur.io">Le Reacteur !</a>
+    <div className="App">
+      <Header />
+      <Counter />
+      <Footer />
     </div>
   );
 }

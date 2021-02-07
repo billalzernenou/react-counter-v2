@@ -1,1 +1,142 @@
 /* Other rules */
+.App {
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+}
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
+}
+p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+}
+
+/*------------------------------------------------------*/
+/*-------------------------HEADER-----------------------*/
+/*------------------------------------------------------*/
+.header {
+  height: 120px;
+  display: flex;
+  align-items: center;
+  padding-left: 50px;
+  border-bottom: 1px #e5e5e5 solid;
+}
+.header h1 {
+  margin-left: 20px;
+}
+/*------------------------------------------------------*/
+/*-------------------------COUNTERS-----------------------*/
+/*------------------------------------------------------*/
+
+.section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 70%;
+  margin: 0px auto;
+  height: 500px;
+}
+.counters {
+  height: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.counters .counter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+.counters .counter {
+  width: 100%;
+  height: 50%;
+}
+.counters .counter div:first-child {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  box-sizing: border-box;
+  text-align: center;
+}
+.counters .counter div:first-child div {
+  width: 60px;
+}
+.counters .counter div:first-child div:nth-child(2) {
+  background: #5c48d3;
+  border-radius: 15px;
+  color: #fff;
+  font-size: 25px;
+  font-family: inherit;
+  padding: 10px;
+}
+
+.counters .reset button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: #5c48d3;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 16px;
+  font-family: inherit;
+  padding: 5px;
+  width: 90px;
+  height: 35px;
+}
+.counters .counter div:first-child button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background: none;
+}
+.section .add-counter {
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section .add-counter button {
+  outline: none;
+  border: none;
+  background: none;
+  background: #5c48d3;
+  border-radius: 15px;
+  width: 120px;
+  height: 45px;
+  font-size: 16px;
+  color: #fff;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .section {
+    height: 600px;
+  }
+  .counters {
+    flex-direction: column;
+    height: 80%;
+    justify-content: flex-start;
+  }
+  .counters .counter {
+    height: 30%;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #5e5e5e;
+    padding-bottom: 3px;
+  }
+}
+
+/*------------------------------------------------------*/
+/*-------------------------FOOTER-----------------------*/
+/*------------------------------------------------------*/
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  text-align: center;
+}
